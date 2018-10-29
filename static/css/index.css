@@ -1,0 +1,119 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #000;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-cursor.png) 10 2, auto;
+    overflow: hidden;
+    text-align: center;
+    background:url('/static/images/login_background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    will-change: transform;
+    z-index: -1;
+}
+
+body:active {
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-click.png) 10 2, auto;
+}
+
+@font-face{
+    font-family:LB;
+    src:url('../fonts/Respective_Slanted.ttf');
+}
+
+#title{
+    font-family:LB !important;
+    font-weight:lighter;
+    text-align:center;
+    color:rgba(250,250,250,0.8);
+    text-shadow:0 0 20px #fff;
+    transform:translateY(110%);
+    letter-spacing:3px;
+    word-spacing:3px;
+    font-size:80px;
+    display:none;
+}
+
+#login{
+    background:rgba(255,255,255,0.7);
+    box-shadow:0px 0px 60px #b5eac9;
+    transform:translateY(50%);
+    margin-left:30vw;
+    width:40vw;
+    height:180px;
+    border-radius:10px;
+    transition:0.3s;
+    display:none;
+}
+
+#login form{
+    padding:15px 0;
+}
+
+.input{
+    background:rgba(255,255,255,0.5);
+    border-style:none;
+    display:block;
+    height:35px;
+    padding-left:3px;
+    margin-top:20px;
+    width:80%;
+    border-radius:5px;
+    margin-left:10%;
+    transition:.3s;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-cursor.png) 10 2, auto;
+}
+
+.input:active{
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-click.png) 10 2, auto;
+}
+
+.input:focus{
+    border:none;
+    outline:none;
+    box-shadow:0px 0px 5px black;
+}
+
+#submit{
+    color:#fff;
+    float:right;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-cursor.png) 10 2, auto;
+    border-style:none;
+    padding:10px 15px;
+    background:#13a9a8;
+    border-radius:5px;
+    transition:.3s;
+}
+
+#submit:hover{
+    color:#13a9a8;
+    background:#ddd;
+}
+
+#submit:active{
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-click.png) 10 2, auto;
+}
+
+#submit:focus{
+    outline:none;
+}
+
+@media screen and (max-width:780px){
+    #login{
+        width:96vw !important;
+        margin-left:2vw;
+    }
+}

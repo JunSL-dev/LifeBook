@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100vh;
+    margin:0;
+}
+
+html{
+    background:rgba(0,0,0,0);
+}
+
+body {
+    padding:10px;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-cursor.png) 10 2, auto;
+    background-color:rgba(0,0,0,0);
+}
+
+body:active {
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-click.png) 10 2, auto;
+}
+
+*{
+    font-family: THE캔디바;
+    margin : 0 auto;
+}
+
+
+.content{
+    text-align:left;
+}
+
+.button{
+    float : right;
+    margin-right:6px;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-cursor.png) 10 2, auto  ;
+}
+
+.button:active{
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/836/hearthstone-click.png) 10 2, auto;
+}
+
+.message:not(:last-child) {
+    margin-bottom: 1rem;
+}
